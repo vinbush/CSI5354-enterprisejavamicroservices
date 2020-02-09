@@ -1,0 +1,302 @@
+{
+    "provider": {
+        "name": "admin_service_provider"
+    },
+    "consumer": {
+        "name": "admin_client_consumer"
+    },
+    "interactions": [
+        {
+            "description": "Create a category",
+            "request": {
+                "method": "POST",
+                "path": "/admin/category",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "created": [
+                        2002,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "header": "header",
+                    "id": null,
+                    "imagePath": "n/a",
+                    "name": "Toyota Hybrid Cars",
+                    "parent": {
+                        "created": null,
+                        "header": null,
+                        "id": 1015,
+                        "imagePath": null,
+                        "name": null,
+                        "parent": null,
+                        "updated": null,
+                        "version": null,
+                        "visible": null
+                    },
+                    "updated": null,
+                    "version": 1,
+                    "visible": true
+                }
+            },
+            "response": {
+                "status": 201,
+                "headers": {
+                    "Location": "http://localhost:8081/admin/category/1020"
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "test create"
+                }
+            ]
+        },
+        {
+            "description": "Delete a category",
+            "request": {
+                "method": "DELETE",
+                "path": "/admin/category/1013"
+            },
+            "response": {
+                "status": 204
+            },
+            "providerStates": [
+                {
+                    "name": "test delete"
+                }
+            ]
+        },
+        {
+            "description": "Retrieve a category",
+            "request": {
+                "method": "GET",
+                "path": "/admin/category"
+            },
+            "response": {
+                "status": 200
+            },
+            "providerStates": [
+                {
+                    "name": "test get all"
+                }
+            ]
+        },
+        {
+            "description": "Retrieve a category",
+            "request": {
+                "method": "GET",
+                "path": "/admin/category/1015"
+            },
+            "response": {
+                "status": 200,
+                "body": {
+                    "created": [
+                        2002,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "header": "header",
+                    "id": 1015,
+                    "imagePath": "n/a",
+                    "name": "Toyota Cars",
+                    "parent": {
+                        "created": [
+                            2002,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        "header": "header",
+                        "id": 1009,
+                        "imagePath": "n/a",
+                        "name": "Cars",
+                        "parent": {
+                            "created": [
+                                2002,
+                                1,
+                                1,
+                                0,
+                                0
+                            ],
+                            "header": "header",
+                            "id": 1002,
+                            "imagePath": "n/a",
+                            "name": "Automobiles",
+                            "parent": {
+                                "created": [
+                                    2002,
+                                    1,
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "header": "header",
+                                "id": 1000,
+                                "imagePath": "n/a",
+                                "name": "Transportation",
+                                "parent": {
+                                    "created": [
+                                        2002,
+                                        1,
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "header": "header",
+                                    "id": 0,
+                                    "imagePath": "n/a",
+                                    "name": "Top",
+                                    "parent": null,
+                                    "updated": null,
+                                    "version": 1,
+                                    "visible": true
+                                },
+                                "updated": null,
+                                "version": 1,
+                                "visible": true
+                            },
+                            "updated": null,
+                            "version": 1,
+                            "visible": true
+                        },
+                        "updated": null,
+                        "version": 1,
+                        "visible": true
+                    },
+                    "updated": null,
+                    "version": 1,
+                    "visible": true
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "test get"
+                }
+            ]
+        },
+        {
+            "description": "Update a category",
+            "request": {
+                "method": "PUT",
+                "path": "/admin/category/1010",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "created": [
+                        2002,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "header": "header",
+                    "id": 1010,
+                    "imagePath": "n/a",
+                    "name": "All Trucks",
+                    "parent": {
+                        "created": null,
+                        "header": null,
+                        "id": 1002,
+                        "imagePath": null,
+                        "name": null,
+                        "parent": null,
+                        "updated": null,
+                        "version": null,
+                        "visible": null
+                    },
+                    "updated": null,
+                    "version": 1,
+                    "visible": true
+                }
+            },
+            "response": {
+                "status": 200,
+                "body": {
+                    "created": [
+                        2002,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "header": "header",
+                    "id": 1010,
+                    "imagePath": "n/a",
+                    "name": "All Trucks",
+                    "parent": {
+                        "created": [
+                            2002,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        "header": "header",
+                        "id": 1002,
+                        "imagePath": "n/a",
+                        "name": "Automobiles",
+                        "parent": {
+                            "created": [
+                                2002,
+                                1,
+                                1,
+                                0,
+                                0
+                            ],
+                            "header": "header",
+                            "id": 1000,
+                            "imagePath": "n/a",
+                            "name": "Transportation",
+                            "parent": {
+                                "created": [
+                                    2002,
+                                    1,
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "header": "header",
+                                "id": 0,
+                                "imagePath": "n/a",
+                                "name": "Top",
+                                "parent": null,
+                                "updated": null,
+                                "version": 1,
+                                "visible": true
+                            },
+                            "updated": null,
+                            "version": 1,
+                            "visible": true
+                        },
+                        "updated": null,
+                        "version": 1,
+                        "visible": true
+                    },
+                    "updated": null,
+                    "version": 2,
+                    "visible": true
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "test update"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.8"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+  "id": 1010,
+  "name": "All Trucks",
+  "header": "header",
+  "visible": true,
+  "imagePath": "n/a",
+  "parent": {
+    "id": 1002,
+    "name": "Automobiles",
+    "header": "header",
+    "visible": true,
+    "imagePath": "n/a",
+    "parent": {
+      "id": 1000,
+      "name": "Transportation",
+      "header": "header",
+      "visible": true,
+      "imagePath": "n/a",
+      "parent": {
+        "id": 0,
+        "name": "Top",
+        "header": "header",
+        "visible": true,
+        "imagePath": "n/a",
+        "parent": null,
+        "created": [
+          2002,
+          1,
+          1,
+          0,
+          0
+        ],
+        "updated": null,
+        "version": 1
+      },
+      "created": [
+        2002,
+        1,
+        1,
+        0,
+        0
+      ],
+      "updated": null,
+      "version": 1
+    },
+    "created": [
+      2002,
+      1,
+      1,
+      0,
+      0
+    ],
+    "updated": null,
+    "version": 1
+  },
+  "created": [
+    2002,
+    1,
+    1,
+    0,
+    0
+  ],
+  "updated": null,
+  "version": 2
+}
